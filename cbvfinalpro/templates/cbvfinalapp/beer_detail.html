@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'cbvfinalapp/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block body_block %}
+    <div class="jumbotron">
+    <h1>Beer Details.....</h1>
+    <ul>
+        <li>Beer Name:{{ beer.name }}</li>
+        <li>Beer Teste:{{ beer.teste }}</li>
+        <li>Beer Color:{{ beer.color }}</li>
+        <li>Beer Price:{{ beer.price }}</li>
+    </ul>
+    </div>
+{% endblock %}
+
+</body>
+</html>

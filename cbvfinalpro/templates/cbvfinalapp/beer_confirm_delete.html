@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'cbvfinalapp/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block body_block %}
+    <h1>Do You Want to delete{{ beer.name }}Record</h1>
+    <form method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" class="btn btn-danger btn-lg" name="" value="Delete">
+    <a href="/" class="btn btn-success btn-lg">Cancel</a>
+    </form>
+{% endblock %}
+
+</body>
+</html>

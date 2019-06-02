@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'cbvfinalapp/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block body_block %}
+    <h1>Add New Beer Here</h1>
+    <form method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" class="btn btn-primary btn-lg" name="" value="Insert/Update">
+    </form>
+{% endblock %}
+
+</body>
+</html>
